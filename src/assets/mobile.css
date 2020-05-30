@@ -1,0 +1,72 @@
+@media(max-width:950px){
+    .who{
+        height: auto;
+        
+    }
+
+    .sec{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .img_logo{
+        height: 75px;
+        width: 75px;
+    }
+
+    .text_who{
+        padding: 0 20px;
+        padding-bottom: 0px;
+        
+    }
+
+    .options_list{
+        flex-wrap: wrap;
+    }
+    .nosotros_vi_mi{
+        
+        display: inline;
+        padding-left: 5%;
+        padding-right: 5%;
+        
+    }
+    .mision{
+        
+        
+        width: 100%;
+        
+
+    }
+    .mision h3{
+        margin-top: 0;
+    }
+
+    .mision p, .mision h3, .vision p, .vision h3{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .vision{
+        width: 100%;
+        
+    }
+
+    .hero_text{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 20px;
+    }
+
+    .logo{
+        height: 40px;
+        width: 50px;
+    }
+    .logo_1{
+        height: 25px;
+        width: 50px;
+    }
+    .clientes{
+        padding: 10%;
+    }
+
+}
