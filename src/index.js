@@ -43,6 +43,6 @@ import './css/normalize.css'
       
       const allItems = document.getElementsByClassName("item");
       for(let x=0;x<allItems.length;x++){
-        resizeGridItem(allItems[x]);
+        imagesLoaded( allItems[x], resizeInstance);
       }
 
