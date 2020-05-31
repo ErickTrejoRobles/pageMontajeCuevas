@@ -9,6 +9,23 @@
         padding-right: 5%;
     }
 
+    .icon-hamburguesa{
+        display: block;
+        color: teal;
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 45px;
+        border-radius: 50%;
+        background-color: black;
+        opacity: .89;
+        position: fixed;
+        right: 10px;
+        top: 15px;
+        z-index: 3;
+    }
+
     .img_logo{
         height: 75px;
         width: 75px;
@@ -20,8 +37,60 @@
         
     }
 
+    .div_options{
+        position: fixed;
+        left: -100vw;
+        top: 0px;
+        right: 0px;
+        z-index: 3;
+        background-color:teal;
+        opacity: .97;
+        bottom: 0;
+     
+        
+        /* display: none; */
+        width: 100vw;
+        transition: 1s;
+    }
+
+    .is-active{
+        left:0;
+
+    }
     .options_list{
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        padding-left: 0;
+        left: 50%;
+        right: 50%;
+        top: 50%;
+        bottom: 50%;
+        margin: 20px 0;
+        
+        
+    }
+    nav li a{
+        color: white;
+        font-size: 25px;
+    }
+
+    nav li a:hover{
+        border-color: white
+        ;
+        color: white;
+    }
+    
+    .option_nav{
+        margin-bottom: 40px;
+        color: white;
+        
+        
+       
+        
+    }
+    .servicios{
+        z-index: 2;
     }
     .nosotros_vi_mi{
         

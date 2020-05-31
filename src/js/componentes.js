@@ -1,14 +1,29 @@
-import '../css/componentes.css';
 
 
 
-export const saludar = ( nombre ) => {
+ const buttonMenu = document.querySelector(".icon-hamburguesa");
+ const div_options= document.querySelector(".div_options");
 
-    console.log('Creando etiqueta h1, en el HTML!');
+ console.log(buttonMenu);
 
-    const h1 = document.createElement('h1');
-    h1.innerText = `Hola, ${ nombre }`;
+ buttonMenu.addEventListener('click',()=>{
 
-    document.body.append( h1 );
+    
+    div_options.classList.add("is-active");
 
-}
+ })
+
+ div_options.addEventListener('click',(event)=>{
+
+    console.log();
+
+    if(event.target.localName == "a"){
+        div_options.classList.remove("is-active");
+        console.log(div_options.classList);
+    }
+
+    else{
+        div_options.classList.remove("is-active");
+    }
+ })
+

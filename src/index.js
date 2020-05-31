@@ -2,6 +2,7 @@
 import './styles.css';
 import './css/mobile.css';
 import './css/normalize.css'
+import './js/componentes'
 
 
 
@@ -14,16 +15,16 @@ import './css/normalize.css'
 
 
     function resizeGridItem(item){
-        console.log(item);
+       
         const grid = document.getElementsByClassName("grid")[0];
-        console.log(grid);
+        
         const rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
-        console.log(rowHeight);
+       
         const rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
         const rowSpan = Math.ceil((item.querySelector('.servicio').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
           item.style.gridRowEnd = "span "+rowSpan;
 
-          console.log(rowSpan);
+          
       }
       
       function resizeAllGridItems(){

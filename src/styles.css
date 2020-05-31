@@ -31,7 +31,7 @@ header::before{
 }
 
 .navigation_bar{
-    background-color: white;
+    background-color: black;
     color: black;
     display: flex;
     justify-content: space-between;
@@ -49,6 +49,7 @@ header::before{
 .option_nav{
     margin-left: 10px;
     margin-right: 10px;
+    
     list-style: none;
     font-family: 'Work Sans', sans-serif;
     
@@ -68,10 +69,13 @@ header::before{
     border-radius: 6px; */
 }
 
+.icon-hamburguesa{
+    display: none;
+}
 
 nav li a{
     text-decoration: none;
-    color: black;
+    color: white;
     border: 2px solid;
     border-radius: 6px;
     padding: 10px;
