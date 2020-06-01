@@ -138,6 +138,23 @@
         padding: 10%;
     }
 
+    .div-correo{
+        display: none;
+    }
+    .div-form{
+        width: 100%;
+    }
+    .div-form div{
+        top: 15%;
+    }
+    .infoContacto{
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        display: block;
+    }
+
 }
 
 @media(max-width:400px){
