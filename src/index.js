@@ -61,16 +61,18 @@ import emailjs from 'emailjs-com';
         const inputs = document.querySelectorAll(".input");
         const txtarea = document.querySelector('.txtarea')
 
+        
+
+        if(inputs[0].value===""|| inputs[1].value==="" || inputs[2].value===""||txtarea.value===""){
+          return alert("Por favor llena todos los datos")
+        }
+
 
         const tamplate = {
           name : inputs[0].value,
           empresa : inputs[1].value,
           email_contacto : inputs[2].value,
           message_html : txtarea.value
-
-
-
-          
         }
 
         console.log(tamplate);

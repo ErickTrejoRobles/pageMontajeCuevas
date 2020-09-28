@@ -1,8 +1,13 @@
+/* Aqui tenemos el estilo del cuerpo */
 body{
     margin: 0;
     background-color: white;
     font-family: 'Gotu', sans-serif;  
 }
+
+
+/*******************************************************/
+/* Estos 2 nos ayuda a poner la imagen de fondo de nuestro header */
 header{
     position: relative;
 }
@@ -18,19 +23,12 @@ header::before{
     filter: blur(3px) brightness(50%);;
 }
 
-
+/* Este nos ayuda para que nuestro header quede atras de todo con la posicion  */
 .header-inside{
     position: relative;
-    color: black;
-    
 }
 
-.logo_principal{ 
-    font-family: 'Black Ops One', cursive;
-    font-size: 20px;
-    color: teal;
-}
-
+/* Este es el diseño de todo nuestro Nav Bar */
 .navigation_bar{
     background-color: black;
     color: black;
@@ -40,40 +38,34 @@ header::before{
     padding: 0px 17%;
 }
 
-.options_list{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    
+/* Estilo de nuestro logo */
+.logo_principal{ 
+    font-family: 'Black Ops One', cursive;
+    font-size: 20px;
+    color: teal;
 }
 
-.option_nav{
-    margin-left: 10px;
-    margin-right: 10px;
-    
-    list-style: none;
-    font-family: 'Work Sans', sans-serif;
-    
-   
-    
-}
-
-#select{
-    margin-left: 10px;
-    margin-right: 10px;
-    list-style: none;
-    font-family: 'Work Sans', sans-serif;
-    
-    color: #008080;
-    /* border: 2px solid;
-    padding: 10px;
-    border-radius: 6px; */
-}
-
+/* Icono para nuestro responsive disign que por el momento queda invisible */
 .icon-hamburguesa{
     display: none;
 }
 
+/* Es la lista de nuestro menu */
+.options_list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Diseño de cada uno de nuestra listas */
+.option_nav{
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Damos el diseño de nuestros enlaces en nuestras listas */
 nav li a{
     text-decoration: none;
     color: white;
@@ -84,6 +76,7 @@ nav li a{
 
 }
 
+/* El diseño que tenemos cuando pasemos el mouse en nuestra lista de nav bar */
 nav li a:hover{
     text-decoration: none;
     color: #008080;
@@ -91,35 +84,31 @@ nav li a:hover{
     padding: 10px;
     border-radius: 6px;
 }
-
-
-.navigation_bar{
-    -webkit-box-shadow: 10px 10px 30px -20px black;
-    box-shadow:  10px 10px 30px -20px black;
-
-}
+/*******************************************************/
 
 
 
-.hero{
-    
+
+/*******************************************************/
+/* Es el diseño de nuestro hero, el div padre */
+.hero{    
     width: 100%;
     height: 800px;
     text-align: center;
     justify-items: center;
 }
 
+/* Logo que tenderemos en nuestro Hero */
 .logo_big{
     font-family: 'Black Ops One', cursive;
     font-size: 70px;
     color: teal;
     padding-top: 100px;
     padding-bottom: 0;
-   
 }
 
+/* Es el texto que acompaña a nuestro Logo en el Hero */
 .hero_text{
-
     color: whitesmoke;
     font-family: 'Gotu', sans-serif;    
     font-size: 22px;
@@ -127,42 +116,104 @@ nav li a:hover{
     text-transform: uppercase;
     letter-spacing: 4px;
     line-height: 35px;
-    
 }
 
+/* Estilo para las palabras con strong del hero  */
 .hero_text strong{
     color: #00CCCC;
     
 }
-.sec{
+/*******************************************************/
+
+
+
+/*******************************************************/
+/* Padre principal de nuesta seccion de clientes */
+.sec_clientes{
+    height: auto;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+/* div de nuestros clientes */
+.clientes{
+    padding: 0 20%;
+    padding-bottom: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilo de nuestro div con todo el texto de los clientes */
+.clientes_text{
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Estilo para nuestro H2 de nuestros clientes */
+.clientes_text h2{
+    margin-bottom: 15px;
+}
+
+/* Estilo de la linea despues del titulo de nuestras secciones  */
+.line{
+    margin: 0 45%;
+    margin-bottom: 0px;
+    height: 2px;   
+    background-color: #008080;
+}
+
+/* Estilo de texto de descripcion de la seccion clientes */
+.clientes_p{
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+/* Estilo que le damos a nuestra fila de nuestros clientes */
+.clientes_1{
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo de nuestros logos  */
+.logo, .logo_1{
+    width: 125px;
+    height: 100px;
+    filter: grayscale();
+}
+.logo_1{
+    height: 60px;    
+}
+
+/* Estilo de nuestros logos cuando pasamos el mouse  */
+.logo:hover , .logo_1:hover {
+    filter: none;
+}
+/*******************************************************/
+
+
+
+
+/*******************************************************/
+/* Estilo de la Seccion padre de la categoria de nosotros */
+.nosotros_section{
     background-color: rgb(245, 245, 245);
     padding: 50px 15%;
-    
 }
 
+/* Estilo de nuestro rectangulo de nosotros */
 .who{
-    
     height: auto;
     padding-bottom: 20px;
-    
-    
-}
-
-.rectangle{
-    
     background-color: white;
     height: 100%;
     border-radius: 3px;
     border: #eaeaea .5px solid;
     padding: 0 5%;
-    
-  
-}
-.mivi{
-    font-family: 'Gotu', sans-serif;    
-
 }
 
+/* Estilo de nuestro titulo de la seccion nosotros */
 .title_who{
     font-family: 'Gotu', sans-serif;    
     text-align: center;
@@ -173,14 +224,12 @@ nav li a:hover{
     color: #008080;
 }
 
+/* Estilo del div de la seccion de nosotros */
 .text_who{
-    
     padding-bottom: 20px;
-    
-    
-    /* background-color: tomato; */
 }
 
+/* Estilo de nuestro texto de la seccion nosotros */
 .parrafo{
     text-align: justify;
     font-family: 'Gotu', sans-serif;  
@@ -188,168 +237,101 @@ nav li a:hover{
     
 }
 
+/* Div que contiene la vision y la mision */
 .nosotros_vi_mi{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.nosotros_vi_mi h3{
+/* Estilo de nuestro H3 para la vision y mision */
+.mivi{
+    font-family: 'Gotu', sans-serif;  
     font-size: 20px;
-    color: #008080;
+    color: #008080;  
 }
 
+/* Div para incluir nuestro texto de la mision */
 .mision{
     width:45%;
 }
+
+/* Div para incluis nuestro texto de la mision */
 .vision{
     width: 45%;
 }
-
-.sec_clientes{
-    height: auto;
-    margin-bottom: 20px;
-    background-color: white;
-}
-
-.clientes_text{
-    text-align: center;
-    font-size: 20px;
-    
-     
-    
-
-}
-
-.clientes_text h2{
-    margin-bottom: 15px;
-}
-.line{
-    margin: 0 45%;
-    margin-bottom: 0px;
-    height: 2px;
-    
-    background-color: #008080;
-}
-
-.clientes_p{
-    font-size: 15px;
-    margin-bottom: 40px;
-}
-
-.clientes{
-    padding: 0 20%;
-    padding-bottom: 20px;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.clientes_1{
-    display: flex;
-    margin-bottom: 50px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo{
-    width: 125px;
-    height: 100px;
-    filter: grayscale();
-    
-}
-
-.logo:hover{
-    filter: none;
-}
-
-.logo_1{
-    width: 125px;
-    height: 60px;
-    filter: grayscale();
-    
-}
-
-.logo_1:hover{
-    filter: none;
-}
+/*******************************************************/
 
 
 
 
 
-.serv{
-    padding: 0 5%;
-}
+/*******************************************************/
+/* Seccion de servicios */
 .servicios{
     max-width: 100%;
     padding: 1% 5%;
     background-color: rgb(245, 245, 245);
     margin: 0;
-    
-    
     position: relative;
     margin-bottom: 0px;
     font-family: 'Gotu', sans-serif;  
-    
-
-}
-.tipoServicio{
-    font-weight: bold;
-    font-size: 20px;
-   color: #008080;
 }
 
-.grid{
-    
-    display: grid;
-    margin-top: 15px;
-    grid-template-columns: repeat(auto-fill,400px);
-    grid-auto-rows: 20px; 
-    
-    grid-gap: 20px;
-    justify-content: center;
-    
-    
-
-}
-
-h2{
+/* Estilo de nuestro H2 de los Servicios */
+.txtServ{
+    margin-top: 0;
+    margin-bottom: 15px;
     text-align: center;
     font-family: 'Gotu', sans-serif;   
     font-size: 30px;
 }
 
+/* Estilo de nuestro Div padre de nuestro grid */
+.grid{    
+    display: grid;
+    margin-top: 15px;
+    grid-template-columns: repeat(auto-fill,400px);
+    grid-auto-rows: 20px; 
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+/* Estilo de nuestro Rectangulo de nuestro servicio */
 .servicio{
     background-color: white;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
     box-shadow: 0px 5px 5px 0 rgb(210, 210, 210);
-    
-    
 }
 
+/* Titulo de nuestro tipo de servicio */
+.tipoServicio{
+    font-weight: bold;
+    font-size: 20px;
+   color: #008080;
+}
+
+/* Padding de nuestro parrafo */
+.serv{
+    padding: 0 5%;
+}
+
+/* Estilo de las imagenes en nuestros servicios */
 .servicio img{
-    
-    
     max-width: 100%;
-    
-   
     margin-bottom: 0;
     border-radius: 0 0 10px 10px;
-    
-    
-    
+}
+/*******************************************************/
 
-}
 
-.txtServ{
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-.contacto{
-    
-}
+
+
+
+/*******************************************************/
+/* Estilo de div de correo de contacto  */
 .div-correo{
     background-color: teal;
     color: white;
@@ -357,9 +339,21 @@ h2{
     width: 40%;
     height: 800px;
     margin: 0;
-    /* display: none; */
-    
 }
+/* Estilo del texto del Div */
+.txtDivContacto{
+    position: relative;
+    top: 10%;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 30px;
+}
+/* Estilo de nuestro H3 */
+.div-correo h3{
+    font-size: 50px;
+}
+
+/* Estilo del div de nuestro formulario */
 .div-form{
     float: left;
     width: 60%;
@@ -369,6 +363,18 @@ h2{
     
     
 }
+/* Estilo del Texto que se mostrara cuando lo pantalla se haga mas chica */
+.infoContacto{
+    display: none;
+}
+.person{
+    display: flex; justify-content: space-between; margin-bottom: 50px;
+}
+.person2{
+    display: flex; justify-content: center; margin-bottom: 50px;
+}
+
+/* Estilo del rectangulo dento del div-form */
 .div-form div {
     padding: 30px;
     position: absolute;
@@ -381,26 +387,7 @@ h2{
     
 }
 
-.infoContacto{
-    display: none;
-}
-.txtDivContacto{
-    position: relative;
-    top: 30%;
-   
-    text-align: center;
-    font-size: 20px;
-    
-    
-    
-}
-
-
-.div-correo h3{
-    font-size: 50px;
-}
-
-
+/* Estilo de nuestros input's */
 .input{
     border: 0;
     outline: none;
@@ -409,6 +396,8 @@ h2{
     height: 40px;
     font-size: 20px;
 }
+
+/* Estilo de nuestro Area de texto */
 .txtarea{
     width: 100%;
     height: 20%;
@@ -417,6 +406,7 @@ h2{
     border-color: #b2b2c2;
 }
 
+/* Estilo de nuestro footer */
 footer{
     text-align: center;
     background-color: black;
